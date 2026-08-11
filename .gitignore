@@ -33,3 +33,10 @@ _tmp_*.py
 .DS_Store
 Thumbs.db
 .env
+
+# Local game notes / one-off dumps (not for public)
+DODO_PEAK_INSTALL.txt
+GOAT3_INSTALL.txt
+scripts/Download-NexusGoatPatch.ps1
+tests/_dump_sponge_*.py
+siglab/harden_gs3.py
