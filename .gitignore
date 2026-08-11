@@ -1,0 +1,35 @@
+# Build / caches
+tools/
+.test_tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.log
+*.pdb
+*.exe
+!scripts/**/*.ps1
+
+# Native build outputs
+native/**/bin/
+native/**/obj/
+native/**/*.dll
+native/**/*.lib
+
+# Local IPC / game dumps (not for public)
+UnrealEngineMCP_IPC/
+**/UnrealEngineMCP_IPC/
+spongebob_*.json
+*_reflection_dump.json
+*_properties.json
+
+# Scratch
+_mcp_probe.txt
+_tmp_*.py
+*.user
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.env

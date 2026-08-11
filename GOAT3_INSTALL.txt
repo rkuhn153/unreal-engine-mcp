@@ -1,0 +1,24 @@
+Goat Simulator 3 (Epic)
+GameDir: D:\Program Files\EpicGames\GoatSimulator3
+Win64: D:\Program Files\EpicGames\GoatSimulator3\Goat2\Binaries\Win64
+IPC: D:\Program Files\EpicGames\GoatSimulator3\Goat2\Binaries\Win64\UnrealEngineMCP_IPC
+Exe: Goat2-Win64-Shipping.exe
+
+MCP pointed here (Grok + Cursor):
+  ~/.grok/config.toml  [mcp_servers.unreal-engine-mcp]
+  ~/.cursor/mcp.json   unreal-engine-mcp.args --ipc-dir
+
+
+Profile: GoatSimulator3 (tools/game-profiles/GoatSimulator3)
+UE4SS: v3.0.1-942-gc0335505 (Nexus GOAT Patch confirmed build)
+  - EngineVersionOverride 4.27
+  - HookAActorTick=0, HookCallFunctionByNameWithArguments=0
+  - bUseUObjectArrayCache=false
+  - mods: UnrealEngineMCP + Keybinds only
+  - no_hooks.txt (delay-only pump)
+
+Reinstall:
+  .\scripts\Install-ToGame.ps1 -GameDir "D:\Program Files\EpicGames\GoatSimulator3" -Profile GoatSimulator3 -Ue4ssZip "tools\UE4SS\UE4SS_v3.0.1-942-gc0335505.zip"
+
+If still crash: install official "UE4SS GOAT Patch" from Nexus on top of ue4ss folder.
+FatalGuard: OFF for GS3 smoke tests.
